@@ -1,2 +1,11 @@
-* * * * * echo "hello stackoverflow" >> /var/log/cron.log 2>&1
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin
+GEM_HOME=/usr/local/bundle
+
+0 8 * * * echo "hello stackoverflow" > /proc/1/fd/1 2>/proc/1/fd/2
+# * * * * * echo "hello stackoverflow" >> /var/log/cron.log 2>&1
+1 8 * * * /app/script.sh > /proc/1/fd/1 2>/proc/1/fd/2
+# * * * * * env > ~/cronenv
+
+# * * * * * /app/ruby.rb > /proc/1/fd/1 2>/proc/1/fd/2
 
