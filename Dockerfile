@@ -1,10 +1,10 @@
-FROM ruby:2.7.1
+FROM ruby:3.3
 
 RUN apt-get update -y
 
 RUN apt-get install -y cron sqlite3
 
-# Docker for Raspbian ARM32
+# Docker for Raspbian
 RUN curl -fsSL https://get.docker.com -o get-docker.sh
 RUN sh get-docker.sh
 # ---

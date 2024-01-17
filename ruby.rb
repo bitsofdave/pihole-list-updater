@@ -16,6 +16,8 @@ exact_whitelists = {
   :anudeepND_whitelist => URI('https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt'),
   :anudeepND_referral_sites => URI('https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/referral-sites.txt'),
   # :anudeepND_optional_list => URI('https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/optional-list.txt'),
+
+  :mmotti_whitelist => URI('https://raw.githubusercontent.com/mmotti/pihole-regex/master/whitelist.list'),
 }
 
 # domainlist types
